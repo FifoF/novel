@@ -1,5 +1,20 @@
 *** LuaLaTeX Document Class: novel
 
+IMPORTANT:
+**********
+This is now in version 1.81, uploaded to CTAN on March 13, 2023.
+Earlier version 1.80, from February 2023, had a bug affecting image floats.
+Although it is fixed in 1.81, TeXlive 2022 "froze" before the fix.
+You may be unable to install version 1.81 by the usual methods. But the
+fix is easy. In your document, just prior to `\begin{document}`, add this
+line of code:
+```
+\makeatletter\def\@TMratio{1}\makeatother
+```
+That fixes the problem of 1.80. And, it will not hurt if you have 1.81.
+**********
+
+
 The 'novel' document class was added to TeXlive in early 2018. By the end
 of that year, it appeared that there would be no further need for updates.
 So I, its original author, removed its GitHub page (obsolete user name).
