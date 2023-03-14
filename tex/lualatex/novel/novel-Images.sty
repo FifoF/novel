@@ -372,7 +372,7 @@ end
 %%
 \DeclareDocumentCommand \@FloatImage { m m m }{% DO NOT CALL DIRECTLY
   \global\@UsingNovelCommandtrue%
-  \gdef\@mygraphic{\novel@sub@inclgr[scale=\@TMratio]{#3}}%
+  \gdef\@mygraphic{\novel@sub@inclgr{#3}}%
   \gdef\@mygraphicname{#3}%
   \gsetlength\@imagewidth{\widthof{\@mygraphic}}%
   \gsetlength\@imageheight{\heightof{\@mygraphic}}%

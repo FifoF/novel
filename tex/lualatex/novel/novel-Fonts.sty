@@ -51,11 +51,12 @@
 } % end \@CheckFontspecFeatures
 % Default font features (will be changed later):
 \defaultfontfeatures{} % reset
-\defaultfontfeatures{SmallCapsFeatures={Renderer=Basic},Ligatures=TeX,} % all
 \if@novrevert
+  \defaultfontfeatures{SmallCapsFeatures={Renderer=Basic},Ligatures=TeX,} % all
   \defaultfontfeatures[\rmfamily,\sffamily]%
     {Kerning=On,Numbers=OldStyle,Ligatures=Common}
 \else
+  \defaultfontfeatures{Ligatures=TeX,} % all
   \defaultfontfeatures[\rmfamily,\sffamily]%
     {Kerning=On,Numbers=OldStyle}
 \fi
@@ -400,7 +401,8 @@
       \gdef\@mymicrotypeset{\@mymicrotypesetup}
     }{ % default to novel's config file
       \gdef\@mymicrotypeset{%
-        config=novel-microtype,final,\@mymicrotypesetup}
+%        config=novel-microtype,final,\@mymicrotypesetup}
+final}
     }
   \else % user did not write \microtypesetup{} in Preamble
     \gdef\@mymicrotypeset{%
