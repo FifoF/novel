@@ -13,7 +13,7 @@
 %% 
 %%
 \ProvidesFile{novel-Fonts.sty}%
-[2023/03/13 v1.81 LaTeX file (font settings and defaults)]
+[2023/03/25 v1.81a LaTeX file (font settings and defaults)]
 %%
 
 
@@ -51,12 +51,11 @@
 } % end \@CheckFontspecFeatures
 % Default font features (will be changed later):
 \defaultfontfeatures{} % reset
+\defaultfontfeatures{SmallCapsFeatures={Renderer=Basic},Ligatures=TeX,} % all
 \if@novrevert
-  \defaultfontfeatures{SmallCapsFeatures={Renderer=Basic},Ligatures=TeX,} % all
   \defaultfontfeatures[\rmfamily,\sffamily]%
     {Kerning=On,Numbers=OldStyle,Ligatures=Common}
 \else
-  \defaultfontfeatures{Ligatures=TeX,} % all
   \defaultfontfeatures[\rmfamily,\sffamily]%
     {Kerning=On,Numbers=OldStyle}
 \fi

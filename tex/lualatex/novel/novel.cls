@@ -14,9 +14,9 @@
 %% 
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
 % Actually needs LuaLaTeX, at least version 0.95 from TeXLive 2016.
-\ProvidesClass{novel}[2023/03/13 v1.81 LaTeX document class]
+\ProvidesClass{novel}[2023/03/25 v1.81a LaTeX document class]
 %%
-%% Version 1.80: Minor changes. Class option `revert' for 1.5.2 behavior.
+%% Version 1.81a: Minor changes. Class option `revert' for 1.5.2 behavior.
 
 
 %% DESCRIPTION:

@@ -2,7 +2,7 @@
 
 IMPORTANT:
 **********
-This is now in version 1.81, uploaded to CTAN on March 13, 2023.
+This is now in version 1.81a, available at CTAN on March 25, 2023.
 Earlier version 1.80, from February 2023, had a bug affecting image floats.
 Although it is fixed in 1.81, TeXlive 2022 "froze" before the fix. So if
 your system has TeXlive 2022, you may be unable to automatically install
